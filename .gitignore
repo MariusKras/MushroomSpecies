@@ -1,0 +1,11 @@
+Mushrooms/
+.mypy_cache/
+__pycache__/
+*.pth
+corrupted_images/
+lightning_logs/
+removed_duplicates/
+unwanted_images/
+pyproject.toml
+poetry.lock
+
