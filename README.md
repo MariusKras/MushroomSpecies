@@ -6,9 +6,9 @@
 
 The dataset for this project can be found on [Kaggle](https://www.kaggle.com/datasets/maysee/mushrooms-classification-common-genuss-images) (licensed under CC0: Data files © Original Authors).
 
-The "Mushroom Classification - Common Genera Species" dataset from Kaggle provides a collection of images across nine mushroom species (genera), highlighting their unique visual characteristics to support the development of computer vision models for classification. These include both edible and highly toxic species, such as Amanita, Cortinarius, and Entoloma, while others like Russula and Lactarius feature both edible and mildly toxic varieties. Additionally, subspecies within a species can sometimes visually differ more from each other than they do from subspecies of other species, adding complexity to classification.
+The "Mushroom Classification - Common Genera Species" dataset from Kaggle contains 6,617 images of nine visually distinct mushroom species. This makes it well-suited for training computer vision models to recognize and classify mushrooms based on appearance. The dataset includes both edible and highly toxic species, such as Amanita, Cortinarius, and Entoloma, as well as genera like Russula and Lactarius, which feature both edible and mildly toxic varieties. Most images are well-centered close-ups of mushrooms on the ground, taken in good lighting with portrait orientation. 
 
-The dataset also has a few minor issues: 9 images were removed as they did not depict mushrooms, close to 90 images are duplicated, and a single corrupted image was removed. Most images are well-centered close-ups of mushrooms on the ground, captured with good picture quality and lighting in a portrait orientation. These are the types of images the app users would have to take to get the most accurate predictions.
+The dataset presents a few challenges. Class distribution is imbalanced, with some species represented by significantly more images than others. In some cases, subspecies within a species can look more different from each other than from subspecies of another species, adding complexity to the classification task. Additionally, nine images were removed for not depicting mushrooms, around 90 are duplicated, and one corrupted image was discarded. 
 
 ## Objectives
 
@@ -16,13 +16,11 @@ The main objective of the project is:
 
 > **Develop a model for a mobile app backend to classify mushroom species.**
 
-The app is intended for foragers who pick up mushrooms and attempt to identify them. This means that I aim to achieve good overall results (accuracy) while ensuring that no individual class lags behind (F1 score).
+The app is intended for foragers who pick up mushrooms and attempt to identify them. This means I aim to achieve good overall results (accuracy) while making sure no individual class falls behind (i.e., no class has a much lower F1 score than the others).
 
-As the project progressed, a critical challenge became evident: the model cannot perfectly classify all mushroom species, and incorrectly identifying a poisonous mushroom as non-poisonous is unacceptable, as it could lead to poisoning. For app users, who would prioritize safety over the exact species, a better goal is:
+As the project progressed, I realized that some errors cannot be fully avoided, and misclassifying a poisonous mushroom as non-poisonous is unacceptable due to the risk of poisoning. A better goal for app users who prioritize safety over identifying the exact species is:
 
 > *Develop a model for a mobile app backend to classify if a mushroom is eatable or not.*
-
-I evaluated whether the model I developed could achieve this goal and outlined an action plan for future work.
 
 ## Results
 
