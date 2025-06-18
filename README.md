@@ -8,7 +8,7 @@ The dataset for this project can be found on [Kaggle](https://www.kaggle.com/dat
 
 The "Mushroom Classification - Common Genera Species" dataset from Kaggle contains 6,617 images of nine mushroom species. This makes it well-suited for training computer vision models to recognize and classify mushrooms based on appearance. The dataset includes both edible and highly toxic species, such as Amanita, Cortinarius, and Entoloma, as well as genera like Russula and Lactarius, which feature both edible and mildly toxic varieties. Most images are well-centered close-ups of mushrooms on the ground, taken in good lighting with portrait orientation. 
 
-The dataset presents a few challenges. Class distribution is imbalanced, with some species represented by significantly more images than others. In some cases, subspecies within a species can look more different from each other than from subspecies of another species, adding complexity to the classification task. Additionally, nine images were removed for not depicting mushrooms, around 90 are duplicated, and one corrupted image was discarded. 
+The dataset presents a few challenges. Class distribution is imbalanced, with some species represented by significantly more images than others. Additionally, nine images were removed for not depicting mushrooms, around 90 are duplicated, and one corrupted image was discarded. A key issue is that subspecies within the same species can sometimes look more different from each other than from subspecies of other species.
 
 ## Objectives
 
