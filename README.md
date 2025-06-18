@@ -34,7 +34,7 @@ The tested pre-trained models are ResNet18 and ResNet34. The training process in
 
 > **The model achieves 90% accuracy on the test dataset, with consistent performance across all classes.**
 
-Threshold adjustments successfully separate poisonous mushrooms ("Amanita" "Cortinarius" and "Entoloma") from non-poisonous ones. The next step would be to adopt a binary classification approach, distinguishing mushrooms as "poisonous" or "non-poisonous," and consider hierarchical or multi-task models to balance safety with species identification.
+I adjusted the threshold to separate poisonous mushrooms ("Amanita", "Cortinarius", and "Entoloma") from non-poisonous ones. This came at the cost of a significant accuracy drop to 61%. The next step would be to test a binary classification approach that distinguishes between "poisonous" and "non-poisonous" mushrooms, or to explore hierarchical or multi-task models that better balance safety with species identification.
 
 ### Model Explainability and Improvements
 
